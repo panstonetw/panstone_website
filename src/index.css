@@ -214,14 +214,14 @@ html, body, #root {
   min-height: 100%;
   overflow-x: hidden; /* 徹底杜絕左右黑邊與捲軸 */
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .mesh-gradient-bg {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* 結合深藍與低飽和度的紫 */
+  background: linear-gradient(-45deg, #1e1b4b, #312e81, #1e293b, #4c1d95);
   background-size: 400% 400%;
   animation: meshGradient 15s ease infinite;
-
-  /* 加上這兩行，確保背景絕對滿版 */
   min-height: 100vh;
   width: 100%;
 }
